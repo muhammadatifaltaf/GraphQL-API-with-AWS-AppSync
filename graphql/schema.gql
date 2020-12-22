@@ -1,0 +1,11 @@
+type Query {
+    welcome: String
+    hello: String
+}
+input ProductInput {
+    name: String
+    price: Int
+}
+type Mutation {
+    addProduct(product: ProductInput): String
+}
